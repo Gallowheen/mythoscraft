@@ -1,0 +1,1330 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: url("https://i.imgur.com/5OkLhiC.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-attachment: fixed;
+  color: black;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: Raleway !important;
+  overflow-x: hidden;
+}
+
+.h1 {
+  color: white;
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.6;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.h2 {
+  line-height: 1.6;
+  font-size: 48px;
+  font-family: minecraft_pe;
+  color: white;
+  font-weight: 900 !important;
+  margin-top: 8px;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.h2.-black {
+  color: black;
+}
+
+.h2.-hidden {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .h2 {
+    font-size: 32px;
+  }
+}
+
+.h3 {
+  line-height: 1.6;
+  font-size: 24px;
+  font-family: minecraft_pe;
+  color: white;
+  font-weight: 900 !important;
+  margin-top: 8px;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.h3.-black {
+  color: black;
+}
+
+.h4 {
+  font-size: 20px;
+  line-height: 1.6;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none !important;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.button:disabled {
+  background: #ccc !important;
+}
+
+.input {
+  border: 1px solid white;
+  border-radius: 2px;
+  background: white;
+  outline: none;
+}
+
+.input:disabled {
+  background: #ccc !important;
+}
+
+.select {
+  border: 1px solid white;
+  border-radius: 2px;
+  outline: none;
+}
+
+@font-face {
+  font-family: "minecraft_pe";
+  src: url("../fonts/MINECRAFT_PE.ttf");
+}
+
+@font-face {
+  font-family: "minecraft";
+  src: url("../fonts/Minecraft.ttf");
+}
+
+section {
+  z-index: 6000;
+}
+
+.header {
+  height: 100vh;
+}
+
+.parralax {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 5000;
+  width: 25%;
+}
+
+.title {
+  font-size: 96px;
+  font-family: minecraft_pe;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 10%;
+  font-weight: bold;
+}
+
+.main__subtitle {
+  font-size: 48px;
+  font-family: minecraft_pe;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 25%;
+  font-weight: bold;
+}
+
+.reddit {
+  font-size: 36px;
+  font-family: minecraft;
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  font-weight: bold;
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+  color: yellow;
+  text-shadow: 2px 3px 0px black;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1.2) rotate(325deg);
+            transform: scale(1.2) rotate(325deg);
+  }
+  50% {
+    -webkit-transform: scale(1) rotate(325deg);
+            transform: scale(1) rotate(325deg);
+  }
+  100% {
+    -webkit-transform: scale(1.2) rotate(325deg);
+            transform: scale(1.2) rotate(325deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1.2) rotate(325deg);
+            transform: scale(1.2) rotate(325deg);
+  }
+  50% {
+    -webkit-transform: scale(1) rotate(325deg);
+            transform: scale(1) rotate(325deg);
+  }
+  100% {
+    -webkit-transform: scale(1.2) rotate(325deg);
+            transform: scale(1.2) rotate(325deg);
+  }
+}
+
+.icon__down {
+  position: absolute;
+  bottom: 5%;
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 25px;
+  -webkit-transform: rotate(-315deg) translateX(-50%);
+          transform: rotate(-315deg) translateX(-50%);
+  z-index: 100;
+  left: 50%;
+  -webkit-animation: levitation 2s infinite;
+          animation: levitation 2s infinite;
+}
+
+.icon__down:hover {
+  cursor: pointer;
+}
+
+@-webkit-keyframes levitation {
+  0% {
+    bottom: 5%;
+  }
+  50% {
+    bottom: 3.5%;
+  }
+  100% {
+    bottom: 5%;
+  }
+}
+
+@keyframes levitation {
+  0% {
+    bottom: 5%;
+  }
+  50% {
+    bottom: 3.5%;
+  }
+  100% {
+    bottom: 5%;
+  }
+}
+
+.mythos {
+  height: 60%;
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  stroke: black;
+  stroke-width: 2px;
+  fill: transparent;
+  stroke-dashoffset: -3350;
+  stroke-dasharray: 3350;
+  margin: auto;
+  -webkit-animation: mythos-animation 8s infinite;
+          animation: mythos-animation 8s infinite;
+}
+
+.path {
+  position: absolute;
+  -webkit-transform: translateY(12.5%);
+          transform: translateY(12.5%);
+}
+
+.main {
+  fill: black;
+  stroke: transparent;
+  stroke-width: 2px;
+}
+
+@-webkit-keyframes fillMain {
+  0% {
+    fill: transparent;
+    stroke: black;
+  }
+  50% {
+    fill: black;
+    stroke: transparent;
+  }
+  100% {
+    fill: transparent;
+    stroke: black;
+  }
+}
+
+@keyframes fillMain {
+  0% {
+    fill: transparent;
+    stroke: black;
+  }
+  50% {
+    fill: black;
+    stroke: transparent;
+  }
+  100% {
+    fill: transparent;
+    stroke: black;
+  }
+}
+
+.st1 {
+  fill: white;
+  -webkit-animation: fillst1 4s;
+          animation: fillst1 4s;
+}
+
+@-webkit-keyframes fillst1 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: white;
+  }
+  100% {
+    fill: white;
+  }
+}
+
+@keyframes fillst1 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: white;
+  }
+  100% {
+    fill: white;
+  }
+}
+
+@-webkit-keyframes mythos-animation {
+  0% {
+    stroke-dashoffset: -3350;
+    fill: transparent;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    fill: white;
+  }
+}
+
+@keyframes mythos-animation {
+  0% {
+    stroke-dashoffset: -3350;
+    fill: transparent;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    fill: white;
+  }
+}
+
+.introduction {
+  padding: 80px 0;
+  background: #f1edec url("../evoker.png");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 5%, bottom;
+}
+
+.introduction.-xmas {
+  background: #f1edec url("../evoker__xmas.png");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 5%, bottom;
+}
+
+.introduction__container {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.introduction__container .introduction__title {
+  font-size: 32px;
+  font-family: minecraft;
+}
+
+.introduction__container .introduction__title.-top {
+  margin-top: 64px;
+}
+
+.join__container {
+  text-align: center;
+  margin-top: 64px;
+}
+
+.join {
+  position: relative;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 24px;
+  color: #FFF;
+  font-family: minecraft;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  background-color: #008a44;
+  border-bottom: 5px solid #022915;
+}
+
+.join:hover {
+  padding: 18px 38px;
+  border-bottom: 2px solid #022915;
+}
+
+.map {
+  position: relative;
+  background: url("../rock.jpg");
+  background-repeat: repeat;
+  background-size: 50%;
+  background-position: center, center;
+  padding: 80px 0;
+}
+
+.panda {
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+  z-index: 5000;
+  width: 15vw;
+}
+
+.subtitle {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 64px;
+  display: block;
+  font-family: minecraft;
+}
+
+.subtitle.-black {
+  color: black;
+}
+
+.dynmap__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dynmap {
+  color: white;
+  font-family: minecraft;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 5px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-animation: bounceIt 1s infinite;
+          animation: bounceIt 1s infinite;
+}
+
+@-webkit-keyframes bounceIt {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes bounceIt {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+.dynmap:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.members {
+  position: relative;
+  padding: 80px;
+  background: #f1edec;
+}
+
+.members__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.member__img {
+  width: 100%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-filter: grayscale(0.6);
+          filter: grayscale(0.6);
+}
+
+.member__img:hover {
+  cursor: pointer;
+}
+
+.member__img.-ekkin0x {
+  opacity: 0.2;
+}
+
+.member__name {
+  font-size: 14px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.member__name.-host {
+  color: purple;
+}
+
+.member__name.-admin {
+  color: cornflowerblue;
+}
+
+.member__name.-ekkin0x {
+  opacity: 0;
+}
+
+.admin {
+  color: cornflowerblue;
+}
+
+.host {
+  color: purple;
+}
+
+.admin, .host {
+  font-weight: bold;
+}
+
+.member__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 16px;
+}
+
+.admin__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 16px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.admin__container .member__img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.description__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.description {
+  text-align: left;
+}
+
+.avatar__container {
+  width: 100px;
+  margin-right: 48px;
+}
+
+.admins__container {
+  margin-bottom: 64px;
+  margin-top: 64px;
+}
+
+.elytra {
+  position: absolute;
+  right: 0;
+  bottom: 200px;
+  z-index: 5000;
+  width: 20%;
+}
+
+.scene {
+  -webkit-perspective: 400px;
+          perspective: 400px;
+  margin: 20px;
+}
+
+.cube {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-100px);
+          transform: translateZ(-100px);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.cube.show-front {
+  -webkit-transform: translateZ(-100px) rotateY(0deg);
+          transform: translateZ(-100px) rotateY(0deg);
+}
+
+.cube.show-right {
+  -webkit-transform: translateZ(-100px) rotateY(-90deg);
+          transform: translateZ(-100px) rotateY(-90deg);
+}
+
+.cube.show-back {
+  -webkit-transform: translateZ(-100px) rotateY(-180deg);
+          transform: translateZ(-100px) rotateY(-180deg);
+}
+
+.cube.show-left {
+  -webkit-transform: translateZ(-100px) rotateY(90deg);
+          transform: translateZ(-100px) rotateY(90deg);
+}
+
+.cube.show-top {
+  -webkit-transform: translateZ(-100px) rotateX(-90deg);
+          transform: translateZ(-100px) rotateX(-90deg);
+}
+
+.cube.show-bottom {
+  -webkit-transform: translateZ(-100px) rotateX(90deg);
+          transform: translateZ(-100px) rotateX(90deg);
+}
+
+.cube__face {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.cube__face--front {
+  -webkit-transform: rotateY(0deg) translateZ(75px);
+          transform: rotateY(0deg) translateZ(75px);
+}
+
+.cube__face--right {
+  -webkit-transform: rotateY(90deg) translateZ(75px);
+          transform: rotateY(90deg) translateZ(75px);
+}
+
+.cube__face--back {
+  -webkit-transform: rotateY(180deg) translateZ(75px);
+          transform: rotateY(180deg) translateZ(75px);
+}
+
+.cube__face--left {
+  -webkit-transform: rotateY(-90deg) translateZ(75px);
+          transform: rotateY(-90deg) translateZ(75px);
+}
+
+.cube__face--top {
+  -webkit-transform: rotateX(90deg) translateZ(75px);
+          transform: rotateX(90deg) translateZ(75px);
+}
+
+.cube__face--bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(75px);
+          transform: rotateX(-90deg) translateZ(75px);
+}
+
+.cube__face--front {
+  background: #008a44;
+}
+
+.cube__face--right {
+  background: #008a44;
+}
+
+.cube__face--back {
+  background: #008a44;
+}
+
+.cube__face--left {
+  background: #008a44;
+}
+
+.cube__face--top {
+  background: #008a44;
+}
+
+.cube__face--bottom {
+  background: #008a44;
+}
+
+.plugins {
+  position: relative;
+  background: url(../rock.jpg);
+  background-repeat: repeat;
+  background-size: 50%;
+  background-position: center, center;
+  padding: 80px 0;
+}
+
+.plugins__container {
+  margin-top: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.plugin__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 35%;
+  color: white;
+  padding: 32px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.plugin__container.-selected {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.plugin__col {
+  overflow: hidden;
+}
+
+.plugin__disclaimer {
+  display: block;
+  width: 60%;
+  color: white;
+}
+
+.plugin__description {
+  color: #00f579;
+}
+
+.plugin__title__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.plugin__row {
+  position: relative;
+}
+
+.plugin__img {
+  height: 75px;
+  width: 75px;
+}
+
+.plugin__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 24px;
+  font-size: 24px;
+  font-family: minecraft;
+}
+
+.icon__left, .icon__right {
+  position: absolute;
+  bottom: 20%;
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 25px;
+  z-index: 100;
+}
+
+.icon__left:hover, .icon__right:hover {
+  cursor: pointer;
+}
+
+.icon__left {
+  -webkit-transform: rotate(135deg) translateX(-50%) translateY(-50%);
+          transform: rotate(135deg) translateX(-50%) translateY(-50%);
+  left: -10%;
+}
+
+.icon__right {
+  -webkit-transform: rotate(315deg) translateX(-50%) translateY(-50%);
+          transform: rotate(315deg) translateX(-50%) translateY(-50%);
+  right: -10%;
+}
+
+.gallery {
+  position: relative;
+  padding: 80px;
+  background: #f1edec;
+}
+
+.season__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.season2 {
+  margin-bottom: 96px;
+}
+
+.fullscreen__viewer {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -100%;
+  left: 0%;
+  z-index: 7000;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.img__fullscreen {
+  width: 80%;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.gallery__img {
+  width: 45%;
+  margin: 24px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__img:hover {
+  cursor: pointer;
+}
+
+.footer {
+  position: relative;
+  background: url("../rock.jpg");
+  background-repeat: repeat;
+  background-size: 50%;
+  background-position: center, center;
+  padding: 20px 0;
+}
+
+.credits {
+  text-align: right;
+  color: white;
+  font-size: 24px;
+  font-family: minecraft;
+}
+
+.credits .credits__img {
+  height: 25px;
+  widows: 25px;
+}
+
+.background {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.foreground {
+  position: absolute;
+  overflow: visible;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#snowflake {
+  color: #fff;
+  position: absolute;
+  font-size: 25px;
+  top: -50px;
+  -webkit-animation: spin-clockwise 6s linear infinite;
+  animation: spin-clockwise 6s linear infinite;
+}
+
+@-webkit-keyframes spin-clockwise {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-clockwise {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin-counterclockwise {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin-counterclockwise {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 32px !important;
+  }
+  .main__subtitle {
+    font-size: 24px !important;
+    top: 17.5%;
+  }
+  .reddit {
+    font-size: 14px !important;
+  }
+  .icon__down {
+    padding: 15px;
+  }
+  .parralax {
+    width: 40%;
+  }
+  .introduction__container {
+    width: 100%;
+    margin-left: 0;
+  }
+  .introduction {
+    padding: 40px, 0px;
+    background-image: none;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .dynmap__container {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .map {
+    padding: 40px, 0px;
+  }
+  .members {
+    padding: 40px 0px;
+  }
+  .member__container {
+    margin: 8px;
+  }
+  .panda {
+    width: 40%;
+  }
+  .plugins {
+    padding: 40px, 0px;
+  }
+  .plugin__disclaimer {
+    width: 100%;
+  }
+  .plugin__container {
+    width: 100% !important;
+  }
+  .plugins__container {
+    margin-top: 48px;
+  }
+  .gallery {
+    padding: 40px 0px;
+  }
+  .gallery__img {
+    width: 100%;
+  }
+  .credits {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .title {
+    font-size: 64px;
+  }
+  .main__subtitle {
+    font-size: 48px;
+    top: 17.5%;
+  }
+  .reddit {
+    font-size: 24px;
+  }
+  .parralax {
+    width: 40%;
+  }
+  .panda {
+    width: 30%;
+  }
+  .admin__container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .avatar__container {
+    margin-right: 0;
+  }
+  .description__container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .introduction {
+    background-position: 0, bottom;
+  }
+  .plugins__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .plugin__container {
+    width: 45%;
+    height: 350px;
+  }
+  .plugin__container.-selected {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .icon__right, .icon__left {
+    display: none;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url("https://i.imgur.com/5OkLhiC.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-attachment: fixed;
+  color: black;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: Raleway !important;
+  overflow-x: hidden;
+}
+
+.h1 {
+  color: white;
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.6;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.h2 {
+  line-height: 1.6;
+  font-size: 48px;
+  font-family: minecraft_pe;
+  color: white;
+  font-weight: 900 !important;
+  margin-top: 8px;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.h2.-black {
+  color: black;
+}
+
+.h2.-hidden {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .h2 {
+    font-size: 32px;
+  }
+}
+
+.h3 {
+  line-height: 1.6;
+  font-size: 24px;
+  font-family: minecraft_pe;
+  color: white;
+  font-weight: 900 !important;
+  margin-top: 8px;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.h3.-black {
+  color: black;
+}
+
+.h4 {
+  font-size: 20px;
+  line-height: 1.6;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none !important;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.button:disabled {
+  background: #ccc !important;
+}
+
+.input {
+  border: 1px solid white;
+  border-radius: 2px;
+  background: white;
+  outline: none;
+}
+
+.input:disabled {
+  background: #ccc !important;
+}
+
+.select {
+  border: 1px solid white;
+  border-radius: 2px;
+  outline: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url("https://i.imgur.com/5OkLhiC.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-attachment: fixed;
+  color: black;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: Raleway !important;
+  overflow-x: hidden;
+}
+
+.h1 {
+  color: white;
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.6;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.h2 {
+  line-height: 1.6;
+  font-size: 48px;
+  font-family: minecraft_pe;
+  color: white;
+  font-weight: 900 !important;
+  margin-top: 8px;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.h2.-black {
+  color: black;
+}
+
+.h2.-hidden {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .h2 {
+    font-size: 32px;
+  }
+}
+
+.h3 {
+  line-height: 1.6;
+  font-size: 24px;
+  font-family: minecraft_pe;
+  color: white;
+  font-weight: 900 !important;
+  margin-top: 8px;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.h3.-black {
+  color: black;
+}
+
+.h4 {
+  font-size: 20px;
+  line-height: 1.6;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none !important;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.button:disabled {
+  background: #ccc !important;
+}
+
+.input {
+  border: 1px solid white;
+  border-radius: 2px;
+  background: white;
+  outline: none;
+}
+
+.input:disabled {
+  background: #ccc !important;
+}
+
+.select {
+  border: 1px solid white;
+  border-radius: 2px;
+  outline: none;
+}
+/*# sourceMappingURL=app.css.map */

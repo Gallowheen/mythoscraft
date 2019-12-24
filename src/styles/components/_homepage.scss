@@ -1,0 +1,846 @@
+@import "styles.scss";
+
+@font-face {
+  font-family: "minecraft_pe";
+  src: url("../fonts/MINECRAFT_PE.ttf");
+}
+
+@font-face {
+  font-family: "minecraft";
+  src: url("../fonts/Minecraft.ttf");
+}
+
+section{
+  z-index: 6000;
+}
+
+.header{
+  height: 100vh;
+}
+
+.parralax{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 5000;
+  width: 25%;
+}
+
+.title{
+  font-size: 96px;
+  font-family: minecraft_pe;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  font-weight: bold;
+}
+
+.main__subtitle{
+  font-size: 48px;
+  font-family: minecraft_pe;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25%;
+  font-weight: bold;
+}
+
+.reddit{
+  font-size: 36px;
+  font-family: minecraft;
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  font-weight: bold;
+  animation: bounce 1s infinite;
+  color: yellow;
+  text-shadow : 2px 3px 0px black;
+
+  @keyframes bounce{
+    0%{
+      transform: scale(1.2) rotate(325deg);
+    }
+    50%{
+      transform: scale(1) rotate(325deg);
+    }
+    100%{
+      transform: scale(1.2) rotate(325deg);
+    }
+  }
+}
+
+.icon__down{
+  position: absolute;
+  bottom: 5%;
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 25px;
+  transform: rotate(-315deg) translateX(-50%);
+  z-index: 100;
+  left: 50%;
+  animation: levitation 2s infinite;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  @keyframes levitation {
+    0% {
+      bottom: 5%;
+    }
+    50% {
+      bottom: 3.5%;
+    }
+    100% {
+      bottom: 5%;
+    }
+  }
+}
+
+.mythos{
+  height : 60%;
+  width : 60%;
+  position : absolute;
+  left : 20%;
+  top : 25%;
+
+  stroke: black;
+  stroke-width: 2px;
+  fill: transparent;
+  stroke-dashoffset: -3350;
+  stroke-dasharray: 3350;
+  margin: auto;
+  animation: mythos-animation 8s infinite;
+}
+
+.path{
+  position : absolute;
+  transform : translateY(12.5%);
+}
+
+.main{
+  fill : black;
+  stroke : transparent;
+  stroke-width: 2px;
+  //animation : fillMain 6s;
+  
+  @keyframes fillMain{
+    0%{
+      fill : transparent;
+      stroke : black;
+    }
+    50%{
+      fill : black;
+      stroke : transparent;
+    }
+    100%{
+      fill : transparent;
+      stroke : black;
+    }
+  }
+}
+
+.st1{
+  fill : white;
+  animation : fillst1 4s;
+  
+  @keyframes fillst1{
+    0%{
+      fill : transparent;
+    }
+    50%{
+      fill : white;
+    }
+    100%{
+      fill : white;
+    }
+  }
+}
+
+@keyframes mythos-animation {
+  0% {
+    stroke-dashoffset: -3350;
+    fill : transparent;
+  }
+  50% {
+    stroke-dashoffset: 0;  
+    fill : white;
+  }
+}
+
+// introduction
+
+.introduction{
+  padding: 80px 0;
+  background: #f1edec url('../evoker.png'); 
+  background-repeat : no-repeat;
+  background-size: 20%;
+  background-position : 5%, bottom;
+
+  &.-xmas{
+    background: #f1edec url('../evoker__xmas.png'); 
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 5%, bottom;
+  }
+}
+
+.introduction__container{
+  width: 60%;
+  margin-left: 20%;
+
+  .introduction__title{
+    font-size: 32px;
+    font-family: minecraft;
+
+    &.-top{
+      margin-top: 64px;
+    }
+  }
+}
+
+.join__container{
+  text-align: center;
+  margin-top: 64px;
+}
+
+.join{
+  position: relative;
+	padding: 20px 40px;
+	border-radius: 10px;
+	font-size: 24px;
+	color: #FFF;
+  font-family: minecraft;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  background-color: #008a44;
+  border-bottom: 5px solid #022915;
+  
+  &:hover{
+    padding: 18px 38px;
+    border-bottom: 2px solid #022915;
+  }
+}
+
+// MAP
+
+.map{
+  position: relative;
+  background : url('../rock.jpg');
+  background-repeat : repeat;
+  background-size: 50%;
+  background-position : center, center;
+  padding: 80px 0;
+}
+
+.panda{
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+  z-index: 5000;
+  width: 15vw;
+}
+
+.subtitle{
+  font-size: 36px;
+  color: white;
+  margin-bottom: 64px;
+  display: block;
+  font-family: minecraft;
+
+  &.-black{
+    color: black;
+  }
+}
+
+.dynmap__container{
+  display: flex;
+  justify-content: center;
+}
+
+.dynmap{
+  color: white;
+  font-family: minecraft;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 5px;
+  transition: 0.5s all;
+  animation: bounceIt 1s infinite;
+
+  @keyframes bounceIt{
+    0%{
+      transform: scale(1.2);
+    }
+    50%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.2);
+    }
+  }
+
+  &:hover{
+    // cursor: pointer;
+    // transform: scale(1.2);
+    animation-play-state: paused;
+  } 
+}
+
+// MEMBERS
+
+.members{
+  position: relative;
+  padding: 80px;
+  background: #f1edec;
+}
+
+.members__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member__img{
+  width: 100%;
+  transition: all .5s;
+  filter: grayscale(.6);
+
+  &:hover{
+    cursor: pointer;
+  //   transform: scale(1.5);
+  //   filter: grayscale(0);
+  }
+
+  &.-ekkin0x{
+    opacity: 0.2;
+  }
+}
+
+.member__name{
+  font-size: 14px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+
+  &.-host{
+    color: purple;
+  }
+
+  &.-admin{
+    color: cornflowerblue;
+  }
+
+  &.-ekkin0x{
+    opacity: 0;
+  }
+}
+
+.admin{
+  color: cornflowerblue;
+}
+
+.host{
+  color: purple;
+}
+
+.admin, .host{
+  font-weight: bold;
+}
+
+.member__container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+  margin: 16px;
+}
+
+.admin__container{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin: 16px;
+  justify-content: right;
+
+  .member__img{
+    &:hover{
+      cursor: pointer;
+      transform: scale(1.5);
+      filter: grayscale(0);
+    } 
+  }
+}
+
+.description__container{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 80%;
+}
+
+.description{
+  text-align: left;
+}
+
+.avatar__container{
+  width: 100px;
+  margin-right: 48px;
+}
+
+.admins__container{
+  margin-bottom: 64px;
+  margin-top: 64px;
+}
+
+.elytra{
+  position: absolute;
+  right: 0;
+  bottom: 200px;
+  z-index: 5000;
+  width: 20%;
+}
+
+.scene {
+  perspective: 400px;
+  margin: 20px;
+}
+
+.cube {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  transition: transform .5s;
+}
+
+.cube.show-front  { transform: translateZ(-100px) rotateY(   0deg); }
+.cube.show-right  { transform: translateZ(-100px) rotateY( -90deg); }
+.cube.show-back   { transform: translateZ(-100px) rotateY(-180deg); }
+.cube.show-left   { transform: translateZ(-100px) rotateY(  90deg); }
+.cube.show-top    { transform: translateZ(-100px) rotateX( -90deg); }
+.cube.show-bottom { transform: translateZ(-100px) rotateX(  90deg); }
+
+.cube__face {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.cube__face--front  { transform: rotateY(  0deg) translateZ(75px); }
+.cube__face--right  { transform: rotateY( 90deg) translateZ(75px); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(75px); }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(75px); }
+.cube__face--top    { transform: rotateX( 90deg) translateZ(75px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(75px); }
+
+.cube__face--front  { background: #008a44; }
+.cube__face--right  { background: #008a44; }
+.cube__face--back   { background: #008a44; }
+.cube__face--left   { background: #008a44; }
+.cube__face--top    { background: #008a44; }
+.cube__face--bottom { background: #008a44; }
+
+
+// PLUGINS
+
+.plugins{
+  position: relative;
+  background: url(../rock.jpg);
+  background-repeat: repeat;
+  background-size: 50%;
+  background-position: center, center;
+  padding: 80px 0;
+}
+
+.plugins__container{
+  margin-top: 92px;
+  display: flex;
+  position: relative;
+  transition: all .5s;
+}
+
+.plugin__container{
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 35%;
+  color: white;
+  padding: 32px;
+  background: rgba(0,0,0,0.6);
+  transform : scale(.8);
+  transition: all .5s;
+
+  &.-selected{
+    transform : scale(1);
+  }
+}
+
+.plugin__col{
+  overflow: hidden;
+}
+
+.plugin__disclaimer{
+  display: block;
+  width: 60%;
+  color: white;
+}
+
+.plugin__description{
+  color: #00f579;
+}
+
+.plugin__title__container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.plugin__row{
+  position: relative;
+}
+
+.plugin__img{
+  height: 75px;
+  width: 75px;
+}
+
+.plugin__title{
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  font-size: 24px;
+  font-family: minecraft;
+}
+
+.icon__left, .icon__right{
+  position: absolute;
+  bottom: 20%;
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 25px;
+  z-index: 100;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.icon__left{
+  transform: rotate(135deg) translateX(-50%) translateY(-50%);
+  left: -10%;
+}
+
+.icon__right{
+  transform: rotate(315deg) translateX(-50%) translateY(-50%);
+  right: -10%;
+}
+
+//Gallery 
+
+.gallery{
+  position: relative;
+  padding: 80px;
+  background: #f1edec;
+}
+
+.season__container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.season2{
+  margin-bottom: 96px;
+}
+
+.fullscreen__viewer{
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  top: -100%;
+  left: 0%;
+  z-index: 7000;
+  transition: all .5s;
+}
+
+.img__fullscreen{
+  width: 80%;
+  filter: blur(5px);
+  transform: scale(0);
+  transition: all .5s;
+}
+
+.gallery__img{
+  width: 45%;
+  margin : 24px 0px;
+  object-fit: cover;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+//Footer
+.footer{
+  position: relative;
+  background : url('../rock.jpg');
+  background-repeat : repeat;
+  background-size: 50%;
+  background-position : center, center;
+  padding: 20px 0;
+}
+
+.credits{
+  text-align: right;
+  color: white;
+  font-size: 24px;
+  font-family: minecraft;
+  
+  .credits__img{
+    height: 25px;
+    widows: 25px;
+  }
+}
+
+//XMAS 
+
+.background {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.foreground {
+  position: absolute;
+  overflow: visible;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#snowflake {
+  color: #fff;
+  position: absolute;
+  font-size: 25px;
+  top: -50px;
+  -webkit-animation: spin-clockwise 6s linear infinite;
+  -moz-animation: spin-clockwise 6s linear infinite;
+  animation: spin-clockwise 6s linear infinite;
+}
+
+@-moz-keyframes 
+spin-clockwise { 100% {
+-moz-transform: rotate(360deg);
+}
+}
+
+@-webkit-keyframes 
+spin-clockwise { 100% {
+-webkit-transform: rotate(360deg);
+}
+}
+
+@keyframes 
+spin-clockwise { 100% {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+
+@-moz-keyframes 
+spin-counterclockwise { 100% {
+-moz-transform: rotate(-360deg);
+}
+}
+
+@-webkit-keyframes 
+spin-counterclockwise { 100% {
+-webkit-transform: rotate(-360deg);
+}
+}
+
+@keyframes 
+spin-counterclockwise { 100% {
+-webkit-transform: rotate(-360deg);
+transform: rotate(-360deg);
+}
+}
+
+//Responsive
+@include respond-below(sm) {
+
+  .title{
+    font-size: 32px !important;
+  }
+
+  .main__subtitle{
+    font-size: 24px !important;
+    top: 17.5%;
+  }
+
+  .reddit{
+    font-size: 14px !important;
+  }
+
+  .icon__down{
+    padding: 15px;
+  }
+
+  .parralax{
+    width: 40%;
+  }
+
+  .introduction__container{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .introduction{
+    padding: 40px, 0px;
+    background-image: none;
+  }
+
+  .subtitle{
+    font-size: 24px;
+  }
+
+  .dynmap__container{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  //map
+
+  .map{
+    padding: 40px, 0px;
+  }
+
+  //members
+
+  .members{
+    padding: 40px 0px;
+  }
+
+  .member__container{
+    margin: 8px;
+  }
+
+  .panda{
+    width: 40%;
+  }
+
+  //plugins
+
+  .plugins{
+    padding: 40px, 0px;
+  }
+
+  .plugin__disclaimer{
+    width: 100%;
+  }
+
+  .plugin__container{
+    width: 100% !important;
+  }
+
+  .plugins__container{
+    margin-top: 48px;
+  }
+
+  //Galley
+  .gallery{
+    padding: 40px 0px;
+  }
+
+  .gallery__img{
+    width: 100%;
+  }
+
+  .credits{
+    font-size: 16px;
+  }
+}
+
+@include respond-below(md) {
+  .title{
+    font-size: 64px;
+  }
+
+  .main__subtitle{
+    font-size: 48px;
+    top: 17.5%;
+  }
+
+  .reddit{
+    font-size: 24px;
+  }
+
+  .parralax{
+    width: 40%;
+  }
+
+  .panda{
+    width: 30%;
+  }
+
+  .admin__container{
+    justify-content: space-around;
+  }
+
+  .avatar__container{
+    margin-right: 0;
+  }
+
+  .description__container{
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+}
+
+@include respond-below(xl) {
+
+  .introduction{
+    background-position : 0, bottom;
+  }
+
+  .plugins__container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .plugin__container{
+    width: 45%;
+    height: 350px;
+
+    &.-selected{
+      transform: scale(.8);
+    }
+  }
+
+  .icon__right, .icon__left{
+    display: none;
+  }
+}
+

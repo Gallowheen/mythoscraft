@@ -1,0 +1,11 @@
+.input {
+  border: 1px solid white;
+  border-radius: 2px;
+  background: white;
+  outline: none;
+}
+
+.input:disabled {
+  background: #ccc !important;
+}
+/*# sourceMappingURL=input.css.map */

@@ -1,0 +1,51 @@
+.input
+{
+  $root: '.input';
+
+  border: 1px solid white;
+  border-radius: 2px;
+  background : white;
+
+  outline : none;
+
+  ////////////////////////////////////////////////////
+  //
+  //                  States
+  //
+  ////////////////////////////////////////////////////
+
+  &::placeholder
+  {
+
+  }
+
+  &:active,
+  &:hover,
+  &:focus
+  {
+
+  }
+
+  &.-error
+  {
+
+  }
+
+  &:invalid
+  {
+
+  }
+
+  &:disabled {
+    background: #ccc !important;
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //                  Variation
+  //
+  ////////////////////////////////////////////////////
+
+}
+
+

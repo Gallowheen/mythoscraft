@@ -1,0 +1,108 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: url("https://i.imgur.com/5OkLhiC.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-attachment: fixed;
+  color: black;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: Raleway !important;
+  overflow-x: hidden;
+}
+
+.h1 {
+  color: white;
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.6;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.h2 {
+  line-height: 1.6;
+  font-size: 48px;
+  font-family: minecraft_pe;
+  color: white;
+  font-weight: 900 !important;
+  margin-top: 8px;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.h2.-black {
+  color: black;
+}
+
+.h2.-hidden {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .h2 {
+    font-size: 32px;
+  }
+}
+
+.h3 {
+  line-height: 1.6;
+  font-size: 24px;
+  font-family: minecraft_pe;
+  color: white;
+  font-weight: 900 !important;
+  margin-top: 8px;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.h3.-black {
+  color: black;
+}
+
+.h4 {
+  font-size: 20px;
+  line-height: 1.6;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none !important;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+}
+
+.button:disabled {
+  background: #ccc !important;
+}
+
+.input {
+  border: 1px solid white;
+  border-radius: 2px;
+  background: white;
+  outline: none;
+}
+
+.input:disabled {
+  background: #ccc !important;
+}
+
+.select {
+  border: 1px solid white;
+  border-radius: 2px;
+  outline: none;
+}
+/*# sourceMappingURL=styles.css.map */

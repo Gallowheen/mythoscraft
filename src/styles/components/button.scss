@@ -1,0 +1,60 @@
+@import "breakpoint.scss";
+
+.button
+{
+  $root: '.button';
+  border : none;
+  background : none;
+  cursor: pointer;
+  outline: none !important;
+  transition: 1s all;
+
+  ////////////////////////////////////////////////////
+  //
+  //                  Child
+  //
+  ////////////////////////////////////////////////////
+
+
+  ////////////////////////////////////////////////////
+  //
+  //                  States
+  //
+  ////////////////////////////////////////////////////
+
+  &:hover
+  {
+
+  }
+
+  &:active
+  {
+
+  }
+
+  &:focus
+  {
+
+  }
+
+  &:disabled {
+    background: #ccc !important;
+  }
+
+
+  ////////////////////////////////////////////////////
+  //
+  //                  Variation
+  //
+  ////////////////////////////////////////////////////
+
+   
+  /*
+  R   E   S   P   O   N   S   I   V   E
+                                        */
+  @include respond-below(sm) {
+    & {
+
+    }
+  }
+}
